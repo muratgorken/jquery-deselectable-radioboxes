@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Deselectable Radio Boxes</title>
+  </head>
+  <body>
+    <h3>Preferred Coffee type</h3>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" id="flexRadioDefault1" name="select_type" value="espresso" />
+      <label class="form-check-label" for="flexRadioDefault1">Espresso</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" id="flexRadioDefault2" name="select_type" value="double_espresso" checked />
+      <label class="form-check-label" for="flexRadioDefault2">Double Espresso</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" id="flexRadioDefault3" name="select_type" value="americano" />
+      <label class="form-check-label" for="flexRadioDefault3">Americano</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" id="flexRadioDefault4" name="select_type" value="cappuccino" />
+      <label class="form-check-label" for="flexRadioDefault4">Cappuccino</label>
+    </div>
+  </body>
+  <script src="src/jquery-3.6.1.min.js"></script>
+  <script src="src/jquery-deselectable-radioboxes.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("input[name='select_type']").deSelectable();
+    });
+  </script>
+</html>
